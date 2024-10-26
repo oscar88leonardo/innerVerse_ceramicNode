@@ -67,9 +67,9 @@ const start = async () => {
     spinner.start('[Ceramic] Starting Ceramic node\n')
     events.on('ceramic', async (isRunning) => {
       if (isRunning) {
-        await bootstrap()
-        await graphiql()
-        await next()
+        //await bootstrap()
+        //await graphiql()
+        //await next()
       }
       if(isRunning === false) {
         ceramic.kill()
